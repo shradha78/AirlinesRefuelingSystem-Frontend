@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.footer{
+
+  margin-top: 1rem;
+
+  padding: 1rem;
+
+  background: linear-gradient(to right, #efa419, #e36c1d);
+
+  /* position: fixed; */
+
+  bottom: 0;
+
+  left: 0;
+
+  width: 100%;
+
+}
+
+#news{
+  background: linear-gradient(to right, #efa419, #e36c1d);
+}
+
+#logoimg{
+  border-radius: 100%;
+}
+
+#admin{
+  margin-left: 100px;
+}
+
+#adminCard{
+  background-color: white;
+}
+
+#adminbtn{
+  background-color: #e36c1d;
+}
+
+#adminbg{
+  background-color: #92908d;
+  margin-left: 0%;
+}
+
+#checkoutCard{
+  background: linear-gradient(to right, #e89b0b, #f38107f7);;
+}

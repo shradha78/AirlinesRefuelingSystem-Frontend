@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Products</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggle(elementId) {
+            const element = document.getElementById(elementId);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+
+        function hide(id){
+            const element = document.getElementById(id);
+            element.style.display="none";
+        }
+
+        function show(id){
+            const element = document.getElementById(id);
+            element.style.display="block";
+        }
+
+        // document.getElementById('btn4').onclick = function(e) {
+        //     e.preventDefault();
+        //     location.href = 'order.html';
+        // };
+    </script>
+    <style>
+        body{
+            background-color: rgb(44, 43, 39);
+        }
+
+        .card-body{
+            background-color:white;
+        }
+
+        .card{
+            background-color:white;
+            margin: 20px;
+        }
+
+        .sub-class{
+            margin: 10px;
+        }
+
+        #hidden1,#hidden2,#hidden3,#backbtn{
+            display: none;
+        }
+
+        .card-title{
+            margin: 5px;
+        }
+
+        #btn4{
+            color: white;
+            background-color: rgb(44, 43, 39);
+            margin: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        #btn1,#btn2,#btn3{
+            color: rgb(44, 43, 39);
+            background-color: white;
+            margin: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        #quantity{
+            background-color: white;
+            color: black;
+            border-color: black;
+            border-width: thin;
+            border-style: solid;
+        }
+
+        #imgsizer{
+            margin-top: 4px;
+        }
+        #imgsizer2{
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1><strong>Products and Services</strong></h1> -->
+    <div class="container">
+        <div class="card-deck ">
+            <div id="target1" class="card scale-100 hover:scale-105 ease-in duration-500" >
+                <div id="toggler1" class="card-body text-center" onclick="hide('toggler1'); hide('target2'); hide('target3');show('hidden1');show('backbtn')">
+                    <img src="https://tiimg.tistatic.com/fp/1/006/275/aviation-kerosene-colonial-grade-54-jet-fuel-russian-origin-342.jpg" height="600" width="400" />
+                    <h5 class="card-title"><strong>Kerosine Based Fuels</strong></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus accusantium eum in sed sit exercitationem. Quos nam fugiat minima nostrum culpa accusantium beatae velit voluptate reprehenderit vitae, magni molestiae.</p>
+                </div>
+            </div>
+            <div id="target2" class="card scale-100 hover:scale-105 ease-in duration-500">
+                <div class="card-body text-center" id="toggler2" onclick="hide('target1'); hide('toggler2'); hide('target3');show('hidden2')">
+                    <img src="https://gosuperior.com/wp-content/uploads/2018/08/iStock-685478516.jpg" height="600" width="400"/>
+                    <h5 class="card-title"><strong>Military Based Fuels</strong></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus accusantium eum in sed sit exercitationem. Quos nam fugiat minima nostrum culpa accusantium beatae velit voluptate reprehenderit vitae, magni molestiae.</p>
+                </div>
+            </div>
+            <div id="target3" class="card scale-100 hover:scale-105 ease-in duration-500" >
+                <div class="card-body text-center" id="toggler3" onclick="hide('target1'); hide('target2'); hide('toggler3');show('hidden3')">
+                    <img src="https://th.bing.com/th/id/R.b3b90b438f8b9ddd8b95d54a968ef372?rik=E1jLEKoyvZmcTQ&riu=http%3a%2f%2fblog.inf.ed.ac.uk%2fatate%2ffiles%2f2016%2f01%2favgas-fueldrums.jpg&ehk=g%2bKDaJGdgj6Qh81h33w8yaVt9urruaRlzyBnaJwSTK8%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" height="600" width="400"/>
+                    <h5 class="card-title"><strong>Avgas</strong></h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus accusantium eum in sed sit exercitationem. Quos nam fugiat minima nostrum culpa accusantium beatae velit voluptate reprehenderit vitae, magni molestiae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="container"  id="hidden1">
+            <center>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body" >
+                        <img src="https://static-cdn4.vigbo.tech/u50683/63077/blog/4769046/3834593/section/c1fd80d0802a521cdcd72a00b1818cd7.jpg" height="600" width="400"/>
+                        <p>Jet A</p>
+                        <p class="price"><strong>$4684.00</strong></p>
+                        <label for="quantity">Quantity (in Ltr):</label>
+                        <input type="text" id="quantity" name="quantity">
+                        <button id="btn4" onclick="location.href='order.html'">Place Order</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="https://c8.alamy.com/comp/B6BJWR/jet-a1-aviation-fuel-tank-farm-feed-pipe-B6BJWR.jpg" height="610" width="400"/>
+                        <p id="imgsizer">Jet A1</p>
+                        <p><strong>$8723.00</strong></p>
+                        <label for="quantity">Quantity (in Ltr):</label>
+                        <input type="text" id="quantity" name="quantity">
+                        <button id="btn4" onclick="location.href='order.html'">Place Order</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="https://th.bing.com/th/id/OIP.p_MMU_ix2sAKPEJQImB5YAHaFU?pid=ImgDet&rs=1" height="600" width="400"/>
+                        <p id="imgsizer2">Jet B</p>
+                        <p><strong>$9273.00</strong></p>
+                        <label for="quantity">Quantity (in Ltr):</label>
+                        <input type="text" id="quantity" name="quantity">
+                        <button id="btn4" onclick="location.href='order.html'">Place Order</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="btn1" onclick="show('toggler1');show('target2');show('target3');hide('hidden1')">Back</button>
+            </div>
+            </center>
+        </div>
+
+        <div class="container"  id="hidden2" >
+            <center>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body" >
+                        <img src="https://i.ebayimg.com/images/g/lm4AAOSwWSlb9BTa/s-l300.jpg" height="250" width="200"/>
+                        <p>JP-1</p>
+                        <p><strong>$3762.00</strong></p>
+                        <label for="quantity">Quantity (in Ltr):</label>
+                        <input type="text" id="quantity" name="quantity">
+                        <button id="btn4" onclick="location.href='order.html'">Place Order</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="https://i.ebayimg.com/images/g/lm4AAOSwWSlb9BTa/s-l300.jpg" height="250" width="200"/>
+                        <p>JP-3</p>
+                        <p><strong>$1676.00</strong></p>
+                        <label for="quantity">Quantity (in Ltr):</label>
+                        <input type="text" id="quantity" name="quantity">
+                        <button id="btn4" onclick="location.href='order.html'">Place Order</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" >
+                        <img src="https://i.ebayimg.com/images/g/lm4AAOSwWSlb9BTa/s-l300.jpg" height="250" width="200"/>
+                        <p>JP-4</p>
+                        <p><strong>$2368.00</strong></p>
+                        <label for="quantity">Quantity (in Ltr):</label>
+                        <input type="text" id="quantity" name="quantity">
+                        <button id="btn4" onclick="location.href='order.html'">Place Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body" >
+                        <img src="https://i.ebayimg.com/images/g/lm4AAOSwWSlb9BTa/s-l300.jpg" height="250" width="200"/>
+                        <p>JP-5</p>
+                        <p><strong>$1484.00</strong></p>
+                        <label for="quantity">Quantity (in Ltr):</label>
+                        <input type="text" id="quantity" name="quantity">
+                        <button id="btn4" onclick="location.href='order.html'">Place Order</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" >
+                        <img src="https://i.ebayimg.com/images/g/lm4AAOSwWSlb9BTa/s-l300.jpg" height="250" width="200"/>
+                        <p>JP-6</p>
+                        <p><strong>$1677.00</strong></p>
+                        <label for="quantity">Quantity (in Ltr):</label>
+                        <input type="text" id="quantity" name="quantity">
+                        <button id="btn4" onclick="location.href='order.html'">Place Order</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" >
+                        <img src="https://i.ebayimg.com/images/g/lm4AAOSwWSlb9BTa/s-l300.jpg" height="250" width="200"/>
+                        <p>JP-7</p>
+                        <p><strong>$1393.00</strong></p>
+                        <label for="quantity">Quantity (in Ltr):</label>
+                        <input type="text" id="quantity" name="quantity"><br>
+                        <button id="btn4" onclick="location.href='order.html'">Place Order</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="btn2" onclick="show('target1');show('toggler2');show('target3');hide('hidden2')">Back</button>
+            </div>
+            </center>
+        </div>
+
+        <div class="container"  id="hidden3" >
+            <center>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body" >
+                        <img src="https://www.airport-suppliers.com/wp-content/uploads/2020/12/TOTAL-Aviation-AvGas-1217721194.jpg" height="600" width="400"/>
+                        <p>AvGas 100</p>
+                        <p><strong>$1657.00</strong></p>
+                        <label for="quantity">Quantity (in Ltr):</label>
+                        <input type="text" id="quantity" name="quantity">
+                        <button id="btn4" onclick="location.href='order.html'">Place Order</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="https://www.airport-suppliers.com/wp-content/uploads/2020/12/TOTAL-Aviation-AvGas-1217721194.jpg" height="600" width="400"/>
+                        <p>AvGas 100LL</p>
+                        <p><strong>$2167.00</strong></p>
+                        <label for="quantity">Quantity (in Ltr):</label>
+                        <input type="text" id="quantity" name="quantity">
+                        <button id="btn4" onclick="location.href='order.html'">Place Order</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="https://www.airport-suppliers.com/wp-content/uploads/2020/12/TOTAL-Aviation-AvGas-1217721194.jpg" height="600" width="400"/>
+                        <p>AvGas 82UL</p>
+                        <p><strong>$4831.00</strong></p><label for="quantity">Quantity (in Ltr):</label>
+                        <input type="text" id="quantity" name="quantity">
+                        <button id="btn4" onclick="location.href='order.html'">Place Order</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="btn3" onclick="show('target1');show('target2');show('toggler3');hide('hidden3')">Back</button>
+            </div>
+            </center>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(44, 43, 39);
+}
+
+.card-body{
+    background-color:white;
+}
+
+.card{
+    background-color:white;
+    margin: 20px;
+}
+
+.sub-class{
+    margin: 10px;
+}
+
+#hidden1,#hidden2,#hidden3,#backbtn{
+    display: none;
+}
+
+.card-title{
+    margin: 5px;
+}
+
+#btn4{
+    color: white;
+    background-color: rgb(44, 43, 39);
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#btn1,#btn2,#btn3{
+    color: rgb(44, 43, 39);
+    background-color: white;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#quantity{
+    background-color: white;
+    color: black;
+    border-color: black;
+    border-width: thin;
+    border-style: solid;
+}
+
+#imgsizer{
+    margin-top: 4px;
+}
+#imgsizer2{
+    margin-top: 8px;
+}
